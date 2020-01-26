@@ -4,15 +4,19 @@
   "description": "my first website with usege sass",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d cars"
   },
   "author": "kingakurzawa",
   "license": "ISC",
+  "homepage": "https://kingakurzawa.github.io/carrental",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
