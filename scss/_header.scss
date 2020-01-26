@@ -1,0 +1,148 @@
+@import './variables';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:800");
+
+.header {
+  background: url("../images/car_sharing.jpeg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 1px -50px 21px -11px rgba(0, 0, 0, 1) inset;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header_logo {
+    margin-left: 10px;
+    font-size: 25px;
+    color: $colorTitle;
+    font-weight: bold;
+
+    span {
+      position: relative;
+      left: -5px;
+      top: -10px;
+      color: $fontColor;
+      font-size: 20px;
+      border-bottom: 4px solid $colorTitle;
+      border-radius: 8px;
+    }
+  }
+}
+
+.header_nav {
+  .header_nav_ul {
+    position: absolute;
+    top: 274px;
+    left: -320px;
+    @include displayPosition();
+    padding-top: 20px;
+    width: 310px;
+    height: 200px;
+    background: #000817d9;
+    list-style: none;
+    font-weight: bolder;
+
+    li {
+      margin: 15px 10px;
+
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        color: $fontColor;
+      }
+    }
+  }
+
+  .header_nav_hamburger {
+    @include displayPosition();
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 10px 20px;
+    background: none;
+    border: none;
+
+    span {
+      display: block;
+      background: rgba(255, 255, 255, 1);
+      width: 45px;
+      height: 4px;
+      margin: 3px auto;
+      border-radius: 20px;
+    }
+  }
+}
+
+.header_title h2 {
+  text-align: center;
+  font-size: 35px;
+  width: 100vw;
+  color: rgba(255, 255, 255, 0.795);
+  margin-top: 60px;
+  word-spacing: -10px;
+}
+
+.header_nav_ul.show {
+  transform: translate(100%);
+  transition: 0.5s transform;
+  width: 338px;
+}
+
+.text {
+  fill: none;
+  stroke-width: 8px;
+  stroke-linejoin: round;
+  stroke-dasharray: 45 48;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+  font: 5em Open Sans, Impact;
+
+  &:nth-child(5n + 1) {
+    stroke: rgb(242, 56, 56);
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
+  }
+
+  &:nth-child(5n + 2) {
+    stroke: rgb(245, 59, 3);
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+  }
+
+  &:nth-child(5n + 3) {
+    stroke: rgb(221, 17, 51);
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s;
+  }
+
+  &:nth-child(5n + 4) {
+    stroke: rgb(190, 34, 34);
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s;
+  }
+
+  &:nth-child(5n + 5) {
+    stroke: rgb(247, 60, 35);
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+  }
+
+}
+
+svg {
+  position: absolute;
+  top: 70px;
+  height: 460px;
+  width: 100vw;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}

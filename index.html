@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Samochody</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f1814e57a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <svg viewBox="0 0 900 300">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="15%" dy=".35em">
+            From £4 per day
+          </text>
+        </symbol>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+      </svg>
+      <div class="header_menu">
+        <i class="fas fa-car header_logo"
+          >&nbsp;car<br />&nbsp;<span>rental</span></i
+        >
+        <ul class="header_nav_ul_bigScreen">
+          <li><a href="#our_offer">OFFER</a></li>
+          <li><a href="#contact" class="header_gallery">CONTACT</a></li>
+          <li><a href="#about_us" class="header_price">ABOUT US</a></li>
+        </ul>
+        <nav class="header_nav">
+          <ul class="header_nav_ul" id="nav">
+            <li><a href="#our_offer">OFFER</a></li>
+            <li><a href="#contact" class="header_gallery">CONTACT</a></li>
+            <li><a href="#about_us" class="header_price">ABOUT US</a></li>
+          </ul>
+          <button class="header_nav_hamburger" aria-label="show menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+      <div class="header_title">
+        <h2>Take us on your way...</h2>
+      </div>
+    </header>
+
+    <section class="sectionOne" id="our_offer">
+      <h2>OUR OFFER</h2>
+      <div class="center">
+        <article class="sectionOne_article_one">
+          <a href="">
+            <img src="./images/oosobowy.jpg" alt="small car" />
+          </a>
+          <a class="button" href="">Small cars</a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolmagna aliqua. Ut enim ad
+            minim veniam, quis noste exercitation.Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor
+          </p>
+        </article>
+        <article class="sectionOne_article_two">
+          <a href="">
+            <img src="./images/samochod-rodzinny.jpg" alt="family car" />
+          </a>
+          <a class="button" href="">Family cars</a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolmagna aliqua. Ut enim ad
+            minim veniam, quis noste exercitation.Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor
+          </p>
+        </article>
+        <article class="sectionOne_article_three">
+          <a href="">
+            <img src="./images/dostawczy.jpg" alt="delivery car" />
+          </a>
+          <a class="button" href="">Delivery cars</a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolmagna aliqua. Ut enim ad
+            minim veniam, quis noste exercitation.Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor
+          </p>
+        </article>
+      </div>
+    </section>
+    <section class="sectionTwo" id="contact">
+      <h2>CONTACT US</h2>
+      <div class="center">
+        <div class="sectionTwo_service">
+          <form
+            action="mailto:j.kingakurzawa@gmail.com"
+            method="post"
+            class="sectionTwo_service_form"
+          >
+            <label for="text">
+              <input type="text" id="text" placeholder="pick-up date:" />
+            </label>
+            <label for="text">
+              <input type="text" placeholder="drop-off date:" />
+            </label>
+            <label for="text">
+              Type of car
+              <select name="type of car">
+                <option value="-1">select</option>
+                <option value="small">Small car</option>
+                <option value="familly">Family car</option>
+                <option value="delivery">Delivery car</option>
+              </select>
+            </label>
+            <label for="email">
+              Your email:<input
+                type="email"
+                placeholder="....@...com"
+                id="email"
+              />
+            </label>
+            <button type="submit" class="submitButton">
+              SEND
+            </button>
+          </form>
+          <h3>+44 500 600 112</h3>
+        </div>
+      </div>
+    </section>
+    <section class="sectionThree" id="about_us">
+      <h2>
+        ABOUT US?
+      </h2>
+      <div class="center">
+        <div class="center_box">
+          <article class="sectionThree_article_one">
+            <i class="fas fa-chart-line"></i>
+            <a href="#">
+              <h3>Highest performance among companies</h3>
+              <span>CHECK IT</span></a
+            >
+          </article>
+          <article class="sectionThree_article_two">
+            <i class="fas fa-users"></i>
+            <a href="#">
+              <h3>
+                24/7 customer support
+              </h3>
+              <span>CHECK IT</span></a
+            >
+          </article>
+        </div>
+        <div class="center_box">
+          <article class="sectionThree_article_three">
+            <img
+              src="./images/5-gold-star-png-11552726673vi3onbeuij.png"
+              alt="5 gold stars"
+            />
+            <a href="#">
+              <h3>5 consumer gold stars</h3>
+              <span>CHECK IT</span></a
+            >
+          </article>
+          <article class="sectionThree_article_four">
+            <img src="./images/medal-2539595_960_720.png" alt="20 years" />
+            <a href="#">
+              <h3>20 years on the market</h3>
+              <span>CHECK IT</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="center">
+        <div class="foot">
+          <a href="#">BACK TO UP</a>
+          <nav class="foot_nav">
+            <div class="foot_nav_box">
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/?hl=pl"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <p class="foot_copyright">Copyright &copy;</p>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

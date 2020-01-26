@@ -1,0 +1,65 @@
+@import './variables';
+
+.sectionTwo {
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Monoton", cursive;
+    word-spacing: 15px;
+    color: $colorTitle;
+    background: #005aff17;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 600;
+    color: $fontColor;
+  }
+
+  .sectionTwo_service {
+    width: 100vw;
+    height: 350px;
+    padding-top: 25px;
+    font-size: 50px;
+    background: url("../images/newcontact.png");
+    background-position: center;
+    background-size: cover;
+    color: $fontColor;
+
+    .sectionTwo_service_form {
+      width: 200px;
+      font-size: 20px;
+
+      label {
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      input,
+      select,
+      button {
+        border-radius: 20px;
+      }
+
+      button {
+        width: 100px;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        border: none;
+        background: $colorTitle;
+        color: $fontColor;
+      }
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+      color: rgba(255, 0, 0, 1);
+    }
+  }
+}

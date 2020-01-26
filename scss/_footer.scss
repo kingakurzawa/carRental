@@ -1,0 +1,30 @@
+@import './variables';
+
+.foot {
+  @include displayPosition();
+  height: 110px;
+  background: rgb(0, 0, 0);
+  color: $fontColor;
+
+  a {
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    color: $colorTitle;
+    text-decoration: none;
+  }
+}
+
+.foot_nav_box {
+  display: flex;
+  margin-right: 50px;
+
+  i {
+    color: $fontColor;
+  }
+}
+
+.foot_nav {
+  display: flex;
+  align-items: center;
+}

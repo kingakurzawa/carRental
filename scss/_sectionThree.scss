@@ -1,0 +1,57 @@
+@import './variables';
+
+.sectionThree {
+  text-align: center;
+  width: 100vw;
+  height: 440px;
+  font-size: 50px;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Monoton", cursive;
+    word-spacing: 15px;
+    color: $colorTitle;
+    background: #005aff17;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .center_box a {
+      color: $fontColor;
+      font-size: 16px;
+      font-weight: bolder;
+    }
+  }
+
+  [class*="sectionThree_article_"] {
+    @include displayPosition();
+    height: 182px;
+    color: $fontColor;
+
+    h3 {
+      font-size: 16px;
+      width: 135px;
+      padding: 5px 0;
+      color: $fontColor;
+    }
+
+    .sectionThree_article_three {
+      text-align: center;
+      justify-content: center;
+    }
+
+    p {
+      display: none;
+    }
+
+    img {
+      width: 70px;
+      height: 60px;
+    }
+  }
+}
