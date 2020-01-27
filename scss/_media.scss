@@ -228,6 +228,10 @@
 }
 
 @media (min-width: 1020px) {
+    .header_nav .header_nav_ul {
+        display: none;
+    }
+
     .sectionTwo .sectionTwo_service {
         display: flex;
         flex-direction: column;
