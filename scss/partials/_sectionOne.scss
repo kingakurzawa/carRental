@@ -1,9 +1,11 @@
-@import './variables';
+@import '../variables/colors';
+@import '../variables/mixins';
+@import '../generic/media';
 
 .sectionOne {
-  text-align: center;
   width: 100vw;
   height: 413px;
+  text-align: center;
 
   .center {
     @include displayPosition();

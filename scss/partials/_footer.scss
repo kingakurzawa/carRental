@@ -1,4 +1,6 @@
-@import './variables';
+@import '../variables/colors';
+@import '../variables/mixins';
+@import '../generic/media';
 
 .foot {
   @include displayPosition();
@@ -8,7 +10,7 @@
 
   a {
     margin: 10px;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 700;
     color: $colorTitle;
     text-decoration: none;

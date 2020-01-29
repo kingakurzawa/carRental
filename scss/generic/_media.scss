@@ -1,3 +1,6 @@
+@import '../variables/colors';
+@import '../variables/mixins';
+
 .header_nav_ul.show {
     @media (max-width: 320px) {
         width: 100vw;
@@ -245,8 +248,6 @@
     }
 
     .sectionTwo_service_form {
-        margin-left: 100px;
-
         label {
             width: 400px;
             font-size: 30px;

@@ -1,4 +1,6 @@
-@import './variables';
+@import '../variables/colors';
+@import '../variables/mixins';
+@import '../generic/media';
 
 .sectionThree {
   text-align: center;
@@ -21,7 +23,7 @@
     align-items: center;
     margin-top: 20px;
 
-    .center_box a {
+    &_box a {
       color: $fontColor;
       font-size: 16px;
       font-weight: bolder;

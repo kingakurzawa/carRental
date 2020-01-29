@@ -1,4 +1,6 @@
-@import './variables';
+@import '../variables/colors';
+@import '../variables/mixins';
+@import '../generic/media';
 
 .sectionTwo {
   h2 {
@@ -17,7 +19,7 @@
     color: $fontColor;
   }
 
-  .sectionTwo_service {
+  &_service {
     width: 100vw;
     height: 350px;
     padding-top: 25px;
@@ -27,13 +29,14 @@
     background-size: cover;
     color: $fontColor;
 
-    .sectionTwo_service_form {
+    &_form {
       width: 200px;
-      font-size: 20px;
+      margin-left: 20px;
+      font-size: 18px;
 
       label {
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 15px
       }
 
       input,
@@ -57,7 +60,7 @@
 
     h3 {
       display: flex;
-      justify-content: center;
+      margin-left: 20px;
       font-size: 24px;
       color: rgba(255, 0, 0, 1);
     }
